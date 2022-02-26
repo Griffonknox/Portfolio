@@ -1,0 +1,49 @@
+{% extends 'template.html' %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block app_content %}
+    <div class="row jumbotron">
+
+        <div class="col-md-9">
+            <h1 class="move">Griffonknox Development</h1>
+            <p class="move" style="color: darkblue;"><b>Application Developer & Software Engineer</b></p>
+            <br><br>
+            <p><span class="glyphicon glyphicon-play" aria-hidden="true"></span> LINKS TO LINKEDIN, GITHUB, SOCIAL MEDIAS ETC.</p>
+
+        </div>
+
+        <div class="col-md-3">
+            <img id="headshot" class="move" src="{{url_for('static', filename='img/headshot.jpg') }}">
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-md-3" id="container">
+            <img class="move" style="width: 100%; border-radius: 5px;" src="{{url_for('static', filename='img/galaxy.jpeg') }}">
+        </div>
+        <div class="col-md-9">
+
+            <ul class="nav nav-tabs">
+              <li role="presentation" class="active"><a href="#">About Me & Education</a></li>
+              <li role="presentation"><a href="#">Projects</a></li>
+              <li role="presentation"><a href="#">Work Experience/Skills</a></li>
+                <li role="presentation"><a href="#">Resume</a></li>
+                <li role="presentation"><a href="#">Contact Me</a></li>
+            </ul>
+
+            <h2 style="color: darkblue;"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> About Me & Education</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        </div>
+    </div>
+    <br>
+<script>
+    $('document').ready(function() {
+        console.log("testing");
+        Image();
+    });
+</script>
+{% endblock %}
