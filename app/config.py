@@ -3,6 +3,6 @@ class Config(object):
 
 
     SQLALCHEMY_TRACK_MODIFICATIONS = False
-    DEBUG = True
+    DEBUG = False
     POSTS_PER_PAGE = 5
 
