@@ -11,7 +11,7 @@ function Image() {
     // Ticker event will be called on every frame
     TweenLite.ticker.addEventListener('tick', function(){
       if (mouse.moved){
-        parallaxIt(".move", -40);
+        parallaxIt(".move", -25);
       }
       mouse.moved = false;
     });

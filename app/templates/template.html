@@ -9,11 +9,12 @@
 {{super()}}
     <meta charset="UTF-8">
     {% include "addons.html" %}
-<!--    <link rel="icon" href="{{ url_for('static',filename='img/logo.png') }}" type="image/x-icon">-->
+    <link rel="icon" href="{{ url_for('static',filename='img/aliennew.png') }}" type="image/x-icon">
 {% endblock %}
 
 
 {% block navbar %}
+    {% include "navbar.html" %}
 {% endblock %}
 
 {% block content %}
