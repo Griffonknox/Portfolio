@@ -109,4 +109,22 @@ h1, .bstyle {
   #container {
     display: none;
   }
+
+}
+
+
+@media (max-width:629px) {
+  #container {
+    display: none;
+  }
+
+  #head-title {
+    font-size: 2.5em;
+    }
+
+    #head-desc {
+    font-size: 1em;
+    color: darkblue;
+    }
+
 }
