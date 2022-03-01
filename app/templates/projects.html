@@ -1,0 +1,31 @@
+{% extends 'template.html' %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block app_content %}
+
+    {% include "header.html" %}
+
+    <div class="row">
+        <div class="col-md-2" id="container">
+            <img class="move" style="width: 100%; border-radius: 5px;" src="{{url_for('static', filename='img/coding.png') }}">
+        </div>
+        <div class="col-md-10">
+
+            {% include "navigation.html" %}
+
+            <h2 style="color: darkblue; padding-bottom: 15px;"><i class="fa-solid fa-code-branch"></i> Projects <span style="font-size: 0.5em;">(Hover for Description)</span></h2>
+
+
+
+            {% include "project_panels.html" %}
+
+
+        </div>
+    </div>
+    <br>
+<script>
+    $('document').ready(function() {
+        Image();
+    });
+</script>
+{% endblock %}

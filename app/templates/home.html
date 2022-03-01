@@ -2,47 +2,36 @@
 {% import 'bootstrap/wtf.html' as wtf %}
 
 {% block app_content %}
-    <div class="row jumbotron">
 
-        <div class="col-md-9">
-            <h1 class="move">Griffonknox Development</h1>
-            <p class="move" style="color: darkblue;"><b>Application Developer & Software Engineer</b></p>
-            <br><br>
-            <p><span class="glyphicon glyphicon-play" aria-hidden="true"></span> LINKS TO LINKEDIN, GITHUB, SOCIAL MEDIAS ETC.</p>
-
-        </div>
-
-        <div class="col-md-3">
-            <img id="headshot" class="move" src="{{url_for('static', filename='img/headshot.jpg') }}">
-        </div>
-
-    </div>
+    {% include "header.html" %}
 
     <div class="row">
-        <div class="col-md-3" id="container">
-            <img class="move" style="width: 100%; border-radius: 5px;" src="{{url_for('static', filename='img/galaxy.jpeg') }}">
+        <div class="col-md-2" id="container">
+            <img class="move" style="width: 100%; border-radius: 5px;" src="{{url_for('static', filename='img/coding.png') }}">
         </div>
-        <div class="col-md-9">
+        <div class="col-md-10">
 
-            <ul class="nav nav-tabs">
-              <li role="presentation" class="active"><a href="#">About Me & Education</a></li>
-              <li role="presentation"><a href="#">Projects</a></li>
-              <li role="presentation"><a href="#">Work Experience/Skills</a></li>
-                <li role="presentation"><a href="#">Resume</a></li>
-                <li role="presentation"><a href="#">Contact Me</a></li>
-            </ul>
+            {% include "navigation.html" %}
 
             <h2 style="color: darkblue;"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> About Me & Education</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
+            <div class="row">
+
+                <div class="col-md-7">
+                    <p class="bstyle display-chat">A motivated, adaptable and responsible Physics graduate seeking a position which will utilize the professional and technical skills developed through past work experiences in this field. I have a methodical approach to work, a good team player and a strong drive to set and complete goals. In my previous opportunities, I developed and programmed tools that were used to increase efficiency and complete the assigned tasks before deadlines.</p>
+                    <br>
+                </div>
+
+                <div class="col-md-5">
+                    {% include "education.html" %}
+                </div>
+
+            </div>
         </div>
     </div>
     <br>
 <script>
     $('document').ready(function() {
-        console.log("testing");
         Image();
     });
 </script>

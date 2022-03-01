@@ -1,0 +1,56 @@
+{% extends 'template.html' %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block app_content %}
+
+    {% include "header.html" %}
+
+    <div class="row">
+        <div class="col-md-2" id="container">
+            <img class="move" style="width: 100%; border-radius: 5px;" src="{{url_for('static', filename='img/coding.png') }}">
+        </div>
+        <div class="col-md-10">
+
+            {% include "navigation.html" %}
+
+            <h2 style="color: darkblue; padding-bottom: 15px;"><span class="glyphicon glyphicon-tasks" aria-hidden="true"></span> Work Experience & Skills</h2>
+
+            <div class="row">
+
+                <div class="col-md-8">
+
+                    <div class="bstyle display-chat">
+                        <p class="exp-head"><b>- Application Developer III:</b> <span style="font-size: 14px;"><i>Hidalgo County; Edinburg, TX (2020 - present)</i></span></p>
+                        <p class="exp-body">Implemented agile methods on a development team to create web applications for employees of Hidalgo County. Knowledge includes program development, server maintenance and security experience.</p>
+                    </div>
+                    <br>
+                    <div class="bstyle display-chat">
+                        <p class="exp-head"><b>- Scientific Research STScI:</b> <span style="font-size: 14px;"><i>(Internship) Baltimore, MD (2019)</i></span></p>
+                        <p class="exp-body">Researched supernovae in order to differentiate subtype progenitors. Developed computer program in Python to calculate and compare supernova spectra.</p>
+                    </div>
+                    <br>
+                    <div class="bstyle display-chat">
+                        <p class="exp-head"><b>- Scientific Research UMKC:</b> <span style="font-size: 14px;"><i>Kansas City, MO (2017 - 2019)</i></span></p>
+                        <p class="exp-body">Researched supernovae in order to differentiate subtype progenitors. Developed computer program in Python to calculate and compare supernova spectra.</p>
+                    </div>
+                    <br>
+                    <div class="bstyle display-chat">
+                        <p class="exp-head"><b>- Print Dept. Supervisor:</b> <span style="font-size: 14px;"><i>Office Depot; Kansas City, MO (2008 - 2016)</i></span></p>
+                        <p class="exp-body">Designed and created business cards, brochures, posters etc. for customers to be printed at the store. Proficient working with and understanding customer needs for a design.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    {% include "skills.html" %}
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <br>
+<script>
+    $('document').ready(function() {
+        Image();
+    });
+</script>
+{% endblock %}
