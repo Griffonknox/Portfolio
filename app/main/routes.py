@@ -6,9 +6,9 @@ def index():
     return render_template("home.html", nav_type="about_me")
 
 
-@bp.route('/projects', methods=['GET', 'POST'])
-def projects():
-    return render_template("projects.html", nav_type="projects")
+@bp.route('/portfolio', methods=['GET', 'POST'])
+def portfolio():
+    return render_template("portfolio.html", nav_type="portfolio")
 
 
 @bp.route('/work_experience', methods=['GET', 'POST'])

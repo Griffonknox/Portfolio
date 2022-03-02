@@ -24,10 +24,10 @@
             <li><a href="{{url_for('main.index')}}">About Me & Education</a></li>
         {% endif %}
 
-        {% if nav_type == "projects" %}
-            <li class="active"><a href="{{url_for('main.projects')}}">Projects</a></li>
+        {% if nav_type == "portfolio" %}
+            <li class="active"><a href="{{url_for('main.portfolio')}}">Portfolio Projects</a></li>
         {% else %}
-            <li><a href="{{url_for('main.projects')}}">Projects</a></li>
+            <li><a href="{{url_for('main.portfolio')}}">Portfolio Projects</a></li>
         {% endif %}
 
         {% if nav_type == "work_experience" %}
