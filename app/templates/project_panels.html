@@ -1,4 +1,5 @@
 <div class="row" style="margin-bottom: 15px;">
+
     <div class="col-md-6">
 
         <div class="flip-card">
@@ -6,10 +7,10 @@
 
             <div class="panel panel-default flip-card-front">
                 <div class="panel-heading">
-                    <h3 class="panel-title"><b>OnePoint</b> - Financial Application</h3>
+                    <h3 class="panel-title"><b>OnePoint</b> - Financial Tracking</h3>
                 </div>
-                <div class="panel-body">
-                <img style="width: 100%; box-shadow: 0 5px 10px black;" src="{{url_for('static', filename='img/onepoint.png') }}">
+                <div class="panel-body" style="text-align: center;">
+                <img style="width: 80%;" class="proj-panel" src="{{url_for('static', filename='img/onepoint.png') }}">
                 </div>
             </div>
 
@@ -19,7 +20,7 @@
                 <p><b>Frameworks:</b> Python-Flask, Bootstrap</p>
                 <p><b>DataBase:</b> MYSQL</p><br>
                 <p><b>Description:</b> Commissioned custom application for a local credit union to keep track of their active members,
-                    as well as document "follow up" attempts.  Application demonstrates the knowledge of C.R.U.D. commands and user authentication.</p>
+                    as well as document "follow up" attempts when performing collections.  Application demonstrates the knowledge of C.R.U.D. commands, user authentication and front-end text components such as text editors.</p>
 
             </div>
           </div>
@@ -32,30 +33,31 @@
         <div class="flip-card">
           <div class="flip-card-inner">
 
-        <div class="panel panel-default flip-card-front">
-          <div class="panel-heading">
-              <h3 class="panel-title"><b>Alien Projectory</b> - Python Video Game</h3>
-          </div>
-          <div class="panel-body">
-            <img style="width:100%; box-shadow: 0 5px 10px black;" src="{{url_for('static', filename='img/alientprojectory.png') }}">
-          </div>
-        </div>
+            <div class="panel panel-default flip-card-front">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><b>"ConsiderMe"</b> - Potential Vendor System</h3>
+                </div>
+                <div class="panel-body" style="text-align: center;">
+                <img style="width: 80%;" class="proj-panel" src="{{url_for('static', filename='img/considerme.png') }}">
+                </div>
+            </div>
 
             <div class="flip-card-back">
-
-                <p><b>Languages:</b> Python</p>
-                <p><b>Frameworks:</b> PyGameZero</p>
-                <p><b>Description:</b> A study to create a Flappy Bird style type of game.  This project gave a great demonstration on understanding the concepts behind video game development, as well as combining my knowledge in both Physics and Programming to simulate Gravity.
-                I created the graphics as well as the music to complete the full development of the game.</p>
-
+                <p><b>Frameworks:</b> Python-Flask, Bootstrap</p>
+                <p><b>DataBase:</b> MSSQL</p><br>
+                <p><b>Description:</b> Application requested by the Budgeting Department to assist in accepting, processing, and updating applications submitted by potential vendors.
+                    Applications demonstrates knowledge of C.R.U.D. commands as well as API communications.  This application communicates with Google SpreadSheet and Google Drive with the use of API's.
+                </p>
             </div>
           </div>
         </div>
 
-    </div>
+</div>
+
 </div>
 
 <div class="row" style="margin-bottom: 15px;">
+
 <div class="col-md-6">
 
         <div class="flip-card">
@@ -65,8 +67,8 @@
                 <div class="panel-heading">
                     <h3 class="panel-title"><b>"I Need Help!"</b> - Customer Ticket Tracking</h3>
                 </div>
-                <div class="panel-body">
-                <img style="width: 100%; box-shadow: 0 5px 10px black;" src="{{url_for('static', filename='img/ineedhelp.png') }}">
+                <div class="panel-body" style="text-align: center;">
+                <img style="width: 80%;" class="proj-panel" src="{{url_for('static', filename='img/ineedhelp.png') }}">
                 </div>
             </div>
 
@@ -90,12 +92,44 @@
         <div class="flip-card">
           <div class="flip-card-inner">
 
+        <div class="panel panel-default flip-card-front">
+          <div class="panel-heading">
+              <h3 class="panel-title"><b>Alien Projectory</b> - Python Video Game</h3>
+          </div>
+          <div class="panel-body" style="text-align: center;">
+            <img style="width:80%;" class="proj-panel" src="{{url_for('static', filename='img/alientprojectory.png') }}">
+          </div>
+        </div>
+
+            <div class="flip-card-back">
+
+                <p><b>Languages:</b> Python</p>
+                <p><b>Frameworks:</b> PyGameZero</p>
+                <p><b>Description:</b> A study to create a Flappy Bird style type of game.  This project gave a great demonstration on understanding the concepts behind video game development, as well as combining my knowledge in both Physics and Programming to simulate Gravity.
+                I created the graphics as well as the music to complete the full development of the game.</p>
+
+            </div>
+          </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+<div class="row" style="margin-bottom: 15px;">
+
+<div class="col-md-6">
+
+        <div class="flip-card">
+          <div class="flip-card-inner">
+
             <div class="panel panel-default flip-card-front">
                 <div class="panel-heading">
-                    <h3 class="panel-title"><b>"QSIC"</b> - Quantum Spectra Intensity Calculator</h3>
+                    <h3 class="panel-title"><b>"QSIC"</b> - Quantify Spectra Intensity Calculator</h3>
                 </div>
                 <div class="panel-body" style="text-align: center;">
-                <img style="width: 68%; box-shadow: 0 5px 10px black;" src="{{url_for('static', filename='img/qsic.png') }}">
+                <img style="width: 68%;" class="proj-panel" src="{{url_for('static', filename='img/qsic.png') }}">
                 </div>
             </div>
 
@@ -103,9 +137,12 @@
 
                 <p><b>Languages:</b> Python</p>
                 <p><b>Libaries:</b> Specutils, Matplotlib, and Pandas</p><br>
-                <p><b>Description:</b> Program to assist research efforts by calculating spectra intensity of several supernovae and displaying in a complex graphing library allowing for zoom, save, etc.
+                <p><b>Description:</b> Program to assist research efforts by calculating spectra intensity of several time stamps of a recorded supernovae and displaying in a complex graphing library allowing for zoom, save, etc.
                 </p>
             </div>
           </div>
         </div>
+
+</div>
+
 </div>
